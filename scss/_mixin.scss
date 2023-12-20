@@ -1,0 +1,30 @@
+@mixin transition {
+    transition: all 0.5s ease-in-out;
+  }
+  
+@function set-text-color($color) {
+@if (lightness($color) > 40%) {
+    @return #000;
+} @else {
+    @return #fff;
+}
+}
+
+@mixin burger-common-code{
+    position: absolute;
+    background: set-text-color($primarycolor);
+    @include transition;
+}
+
+@mixin background-gradient {
+    
+    background:
+    linear-gradient(
+        to right,
+        rgba($primarycolor, 0.9),
+        rgba($primarycolor, 0.3),
+    ),
+    url(../dist/img/model.jpg) center top;
+    background-size: cover;
+    align-items: center;
+}

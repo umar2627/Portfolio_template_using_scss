@@ -1,0 +1,17 @@
+.contact {
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include background-gradient;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    &_list{
+        dis
+    }
+}
